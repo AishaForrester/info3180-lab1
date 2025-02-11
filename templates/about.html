@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}"/>
 </head>
 <body>
-    <div>
-        <h1>Aisha Forrester</h1>
-        <div>
+    
+    <div class="container">
+        <h1>Aisha Forrester</h1> 
+        <div class="card">
+            <img src="{{ url_for('static', filename='code-pic.webp') }}" alt="Image of a laptop" id="image">
             <p>
                 I would love to change the world...but they won't give me the source code!
                 I am an aspiring Software Engineer with a passion fueled with the drive to
@@ -17,10 +20,8 @@
                 founder of a Software-driven business that cultivates and enrichen an environment best
                 suited for STEM women. 
             </p>
-        </div>
+        </div>  
     </div>
-   
-    
-    
+     
 </body>
 </html>
